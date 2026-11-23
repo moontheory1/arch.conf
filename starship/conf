@@ -1,0 +1,35 @@
+nano ~/.config/starship.toml
+format = "$os$directory$git_branch$character"
+
+[os]
+disabled = false
+style = "bold white"
+
+[os.symbols]
+Arch = " "
+
+[directory]
+style = "bold #f5c2e7"
+format = "[$path]($style) "
+home_symbol = " ~"
+truncation_length = 3
+truncate_to_repo = false
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Videos" = " "
+"Desktop" = " "
+"Trash" = " "
+".local/share/Trash" = " "
+
+[git_branch]
+symbol = " "
+style = "bright-black"
+format = "[$symbol$branch]($style) "
+
+[character]
+success_symbol = "[❯](bold #89dceb)"
+error_symbol = "[❯](bold #f38ba8)"
