@@ -3,6 +3,9 @@ in case i lost my .conf so it's easier.
 fsociety
 
 #github
+
+git init
+
 git add .
 
 git commit -m "Initial commit"
