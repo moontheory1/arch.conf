@@ -1,0 +1,143 @@
+#fun code's to use in terminal
+
+--------> copy img <--------
+
+sudo fsarchiver savefs -A /home/moonlight/full_arch_backup.fsa /dev/mapper/ArchinstallVg-root /dev/mapper/ArchinstallVg-home
+
+--------> lock screen <--------
+
+#ssdm
+(change)
+sudo cp /path/to/new_video.mp4 /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my_video.mp4
+
+(test)
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-dark
+
+(kde)
+/usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my_video.mp4
+
+--------> link's <--------
+
+curl qrenco.de/https://archlinux.org
+curl -sL https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+
+--------> game's <--------
+
+angband
+worm
+robots
+robotfindskitten
+bastet
+ninvaders
+greed
+curseofwar
+
+--------> text's <--------
+
+figlet "ARCH LINUX"
+toilet -f bigmono9 "ARCH LINUX"
+
+--------> look's <--------
+
+asciiquarium
+sl
+nyancat
+aafire -driver curses
+cmatrix -C (color)
+lavat
+lavat -c (color) -R (1-5)
+sptlrx
+pipes.sh
+tty-clock -c -D -C (0-7) -B
+
+(ssdm test)
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme
+
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-dark
+
+--------> curl command's <--------
+
+curl ascii.live/donut
+curl ascii.live/clock
+curl ascii.live/earth
+curl ascii.live/forrest
+curl parrot.live
+curl ascii.live/batman
+curl ascii.live/playstation
+curl ascii.live/dvd
+curl ascii.live/nyan
+curl ascii.live/coin
+curl ascii.live/rick
+curl wttr.in/Moon
+
+--------> device info <--------
+
+fastfetch
+curl ipinfo.io
+curl "https://open.er-api.com/v6/latest/USD" | jq '.rates.EUR'
+btop
+fortune | cowsay | lolcat
+sudo dmesg -w
+journalctl -f
+trash-restore
+sudo rm -rf "app name"
+sudo pacman -R "app name"
+sudo pacman -Scc
+
+--------> device update <--------
+
+#gpu
+
+sudo pacman -S nvidia-dkms
+nvidia-smi
+sudo pacman -Syu nvidia-dkms nvidia-utils
+glxgears
+vblank_mode=0 glxgears
+__GL_SYNC_TO_VBLANK=0 glxgears
+
+#arch linux
+
+sudo pacman -Syu
+sudo pacman -Syyu
+
+--------> file's <--------
+
+unzip "file name"
+
+--------> " .config " <--------
+
+(terminal "kitty")
+nano ~/.config/kitty/kitty.conf
+
+(fastfetch)
+nano ~/.config/fastfetch/config.jsonc
+
+(lyrics)
+nano ~/.config/terminal-lyrics/config.toml
+
+(fish "terminal")
+nano ~/.config/fish/config.fish
+
+(starship)
+nano ~/.config/starship.toml
+
+(Clean Minimal Prompt "~❯")
+echo 'export PS1="\w ❯ "' >> ~/.bashrc && source ~/.bashrc
+
+(Ultra-Minimalist Prompt "❯")
+echo 'export PS1="❯ "' >> ~/.bashrc && source ~/.bashrc
+
+(Modern Colored Prompt "~❯")
+echo 'export PS1="\[\033[1;36m\]\w\[\033[0m\] ❯ "' >> ~/.bashrc && source ~/.bashrc
+
+(basic "og")
+sed -i '/export PS1=/d' ~/.bashrc && source ~/.bashrc
+
+(cava)
+nano ~/.config/cava/config
+
+(ssdm)
+sudo nano /usr/share/sddm/themes/sddm-astronaut-theme/Themes/astronaut.conf
+
+sudo nano /etc/sddm.conf.d/theme.conf
