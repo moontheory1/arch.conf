@@ -1,0 +1,16 @@
+window,
+window.background,
+.osd,
+box,
+label {
+    background-color: transparent;
+    background-image: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+label {
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.9);
+}

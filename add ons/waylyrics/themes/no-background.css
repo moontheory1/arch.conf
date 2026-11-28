@@ -1,0 +1,14 @@
+window,
+window.background,
+.osd,
+box {
+    background-color: rgba(0, 0, 0, 0);
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+label {
+    color: #ffffff;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.9);
+}

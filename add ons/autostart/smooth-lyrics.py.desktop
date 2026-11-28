@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/moonlight/.local/bin/smooth-lyrics.py
+Icon=text-x-python3
+Name=smooth-lyrics.py
+Type=Application
+X-KDE-AutostartScript=true
